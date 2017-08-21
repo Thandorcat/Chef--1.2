@@ -1,0 +1,486 @@
+-----> Starting Kitchen (v1.17.0)
+-----> Cleaning up any prior instances of <default-sbeliakou-centos-73-x86-64-minimal>
+-----> Destroying <default-sbeliakou-centos-73-x86-64-minimal>...
+       ==> default: Forcing shutdown of VM...
+       ==> default: Destroying VM and associated drives...
+       Vagrant instance <default-sbeliakou-centos-73-x86-64-minimal> destroyed.
+       Finished destroying <default-sbeliakou-centos-73-x86-64-minimal> (0m4.76s).
+-----> Testing <default-sbeliakou-centos-73-x86-64-minimal>
+-----> Creating <default-sbeliakou-centos-73-x86-64-minimal>...
+       Bringing machine 'default' up with 'virtualbox' provider...
+       ==> default: Importing base box 'sbeliakou/centos-7.3-x86_64-minimal'...
+       [KProgress: 10%[KProgress: 30%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+       ==> default: Checking if box 'sbeliakou/centos-7.3-x86_64-minimal' is up to date...
+       ==> default: Setting the name of the VM: kitchen-task1_community-default-sbeliakou-centos-73-x86-64-minimal_default_1503338866771_77735
+       ==> default: Fixed port collision for 22 => 2222. Now on port 2203.
+       ==> default: Clearing any previously set network interfaces...
+       ==> default: Preparing network interfaces based on configuration...
+           default: Adapter 1: nat
+           default: Adapter 2: hostonly
+       ==> default: Forwarding ports...
+           default: 22 (guest) => 2203 (host) (adapter 1)
+       ==> default: Booting VM...
+       ==> default: Waiting for machine to boot. This may take a few minutes...
+           default: SSH address: 127.0.0.1:2203
+           default: SSH username: vagrant
+           default: SSH auth method: private key
+           default: Warning: Connection reset. Retrying...
+           default: Warning: Remote connection disconnect. Retrying...
+           default: Warning: Connection reset. Retrying...
+           default: Warning: Remote connection disconnect. Retrying...
+           default: Warning: Connection reset. Retrying...
+           default: Warning: Remote connection disconnect. Retrying...
+           default: Warning: Connection reset. Retrying...
+           default: 
+           default: Vagrant insecure key detected. Vagrant will automatically replace
+           default: this with a newly generated keypair for better security.
+           default: 
+           default: Inserting generated public key within guest...
+           default: Removing insecure key from the guest if it's present...
+           default: Key inserted! Disconnecting and reconnecting using new SSH key...
+       ==> default: Machine booted and ready!
+       ==> default: Checking for guest additions in VM...
+       ==> default: Setting hostname...
+       ==> default: Configuring and enabling network interfaces...
+           default: SSH address: 127.0.0.1:2203
+           default: SSH username: vagrant
+           default: SSH auth method: private key
+       ==> default: Machine not provisioned because `--no-provision` is specified.
+       [SSH] Established
+       Vagrant instance <default-sbeliakou-centos-73-x86-64-minimal> created.
+       Finished creating <default-sbeliakou-centos-73-x86-64-minimal> (1m18.93s).
+-----> Converging <default-sbeliakou-centos-73-x86-64-minimal>...
+       Preparing files for transfer
+       Preparing dna.json
+       Resolving cookbook dependencies with Berkshelf 6.3.0...
+       Removing non-cookbook files before transfer
+       Preparing validation.pem
+       Preparing client.rb
+-----> Installing Chef Omnibus (install only if missing)
+       Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+       Trying wget...
+       Download complete.
+       el 7 x86_64
+       Getting information for chef stable  for el...
+       downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+         to file /tmp/install.sh.10426/metadata.txt
+       trying wget...
+       sha1	d3d26412b6304c92f72749d00e62e0191ceada05
+       sha256	fe051b504856a74ccce1fd23ff92c296506cb8292a3933c71069ae915e7a4a00
+       url	https://packages.chef.io/files/stable/chef/13.3.42/el/7/chef-13.3.42-1.el7.x86_64.rpm
+       version	13.3.42
+       downloaded metadata file looks valid...
+       downloading https://packages.chef.io/files/stable/chef/13.3.42/el/7/chef-13.3.42-1.el7.x86_64.rpm
+         to file /tmp/install.sh.10426/chef-13.3.42-1.el7.x86_64.rpm
+       trying wget...
+       Comparing checksum with sha256sum...
+       
+       WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+       
+       You are installing an omnibus package without a version pin.  If you are installing
+       on production servers via an automated process this is DANGEROUS and you will
+       be upgraded without warning on new releases, even to new major releases.
+       Letting the version float is only appropriate in desktop, test, development or
+       CI/CD environments.
+       
+       WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+       
+       Installing chef 
+       installing with rpm...
+       warning: /tmp/install.sh.10426/chef-13.3.42-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+       Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+       Updating / installing...
+          1:chef-13.3.42-1.el7                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+       Thank you for installing Chef!
+       Transferring files to <default-sbeliakou-centos-73-x86-64-minimal>
+       Starting Chef Client, version 13.3.42
+       Creating a new client identity for default-sbeliakou-centos-73-x86-64-minimal using the validator key.
+       resolving cookbooks for run list: ["chef_nginx::default"]
+       Synchronizing Cookbooks:
+         - chef_nginx (6.1.1)
+         - ohai (5.2.0)
+         - build-essential (8.0.3)
+         - yum-epel (2.1.2)
+         - compat_resource (12.19.0)
+         - zypper (0.4.0)
+         - seven_zip (2.0.2)
+         - mingw (2.0.1)
+         - windows (3.1.2)
+       Installing Cookbook Gems:
+       Compiling Cookbooks...
+       Recipe: chef_nginx::ohai_plugin
+         * ohai_plugin[nginx] action create[2017-08-21T19:09:10+01:00] WARN: The Ohai plugin_path does not include /tmp/kitchen/ohai/plugins. Ohai will reload on each chef-client run in order to add this directory to the path unless you modify your client.rb configuration to add this directory to plugin_path. The plugin_path can be set via the chef-client::config recipe. See 'Ohai Settings' at https://docs.chef.io/config_rb_client.html#ohai-settings for more details.
+       [2017-08-21T19:09:10+01:00] WARN: The Ohai plugin_path does not include /tmp/kitchen/ohai/plugins. Ohai will reload on each chef-client run in order to add this directory to the path unless you modify your client.rb configuration to add this directory to plugin_path. The plugin_path can be set via the chef-client::config recipe. See 'Ohai Settings' at https://docs.chef.io/config_rb_client.html#ohai-settings for more details.
+       [2017-08-21T19:09:10+01:00] WARN: Adding /tmp/kitchen/ohai/plugins to the Ohai plugin path for this chef-client run only
+       [2017-08-21T19:09:10+01:00] WARN: Adding /tmp/kitchen/ohai/plugins to the Ohai plugin path for this chef-client run only
+       
+           * directory[/tmp/kitchen/ohai/plugins] action create
+             - create new directory /tmp/kitchen/ohai/plugins
+           * template[/tmp/kitchen/ohai/plugins/nginx.rb] action create
+             - create new file /tmp/kitchen/ohai/plugins/nginx.rb
+             - update content in file /tmp/kitchen/ohai/plugins/nginx.rb from none to 769636
+             --- /tmp/kitchen/ohai/plugins/nginx.rb	2017-08-21 19:09:10.683116685 +0100
+             +++ /tmp/kitchen/ohai/plugins/.chef-nginx20170821-11934-1qi0ipd.rb	2017-08-21 19:09:10.683116685 +0100
+             @@ -1 +1,83 @@
+             +#
+             +# Author:: Jamie Winsor (<jamie@vialstudios.com>)
+             +#
+             +# Copyright 2012, Riot Games
+             +#
+             +# Licensed under the Apache License, Version 2.0 (the "License");
+             +# you may not use this file except in compliance with the License.
+             +# You may obtain a copy of the License at
+             +#
+             +#     http://www.apache.org/licenses/LICENSE-2.0
+             +#
+             +# Unless required by applicable law or agreed to in writing, software
+             +# distributed under the License is distributed on an "AS IS" BASIS,
+             +# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             +# See the License for the specific language governing permissions and
+             +# limitations under the License.
+             +#
+             +
+             +Ohai.plugin(:Nginx) do
+             +  provides "nginx"
+             +  provides "nginx/version"
+             +  provides "nginx/configure_arguments"
+             +  provides "nginx/prefix"
+             +  provides "nginx/conf_path"
+             +
+             +  def parse_flags(flags)
+             +    prefix = nil
+             +    conf_path = nil
+             +
+             +    flags.each do |flag|
+             +      case flag
+             +      when /^--prefix=(.+)$/
+             +        prefix = Regexp.last_match(1)
+             +      when /^--conf-path=(.+)$/
+             +        conf_path = Regexp.last_match(1)
+             +      end
+             +    end
+             +
+             +    [prefix, conf_path]
+             +  end
+             +
+             +  collect_data do
+             +    nginx Mash.new unless nginx
+             +    # if we fail we should still have these values to avoid nil class errors
+             +    # if people try to use them
+             +    nginx[:version]             = nil unless nginx[:version]
+             +    nginx[:configure_arguments] = [] unless nginx[:configure_arguments]
+             +    nginx[:prefix]              = nil unless nginx[:prefix]
+             +    nginx[:conf_path]           = nil unless nginx[:conf_path]
+             +
+             +    begin
+             +      so = shell_out("/usr/sbin/nginx -V")
+             +      # Sample output:
+             +      # nginx version: nginx/1.10.1
+             +      # built by clang 7.3.0 (clang-703.0.31)
+             +      # built with OpenSSL 1.0.2h  3 May 2016
+             +      # TLS SNI support enabled
+             +      # configure arguments: --prefix=/usr/local/Cellar/nginx/1.10.1 --with-http_ssl_module --with-pcre --with-ipv6 --sbin-path=/usr/local/Cellar/nginx/1.10.1/bin/nginx --with-cc-opt='-I/usr/local/Cellar/pcre/8.38/include -I/usr/local/Cellar/openssl/1.0.2h_1/include' --with-ld-opt='-L/usr/local/Cellar/pcre/8.38/lib -L/usr/local/Cellar/openssl/1.0.2h_1/lib' --conf-path=/usr/local/etc/nginx/nginx.conf --pid-path=/usr/local/var/run/nginx.pid --lock-path=/usr/local/var/run/nginx.lock --http-client-body-temp-path=/usr/local/var/run/nginx/client_body_temp --http-proxy-temp-path=/usr/local/var/run/nginx/proxy_temp --http-fastcgi-temp-path=/usr/local/var/run/nginx/fastcgi_temp --http-uwsgi-temp-path=/usr/local/var/run/nginx/uwsgi_temp --http-scgi-temp-path=/usr/local/var/run/nginx/scgi_temp --http-log-path=/usr/local/var/log/nginx/access.log --error-log-path=/usr/local/var/log/nginx/error.log --with-http_gzip_static_module
+             +
+             +      if so.exitstatus == 0
+             +        so.stderr.split("\n").each do |line|
+             +          case line
+             +          when /^configure arguments:(.+)/
+             +            # This could be better: I'm splitting on configure arguments which removes them and also
+             +            # adds a blank string at index 0 of the array. This is why we drop index 0 and map to
+             +            # add the '--' prefix back to the configure argument.
+             +            nginx[:configure_arguments] = Regexp.last_match(1).split(/\s--(?!param)/).drop(1).map { |ca| "--#{ca}" }
+             +
+             +            prefix, conf_path = parse_flags(nginx[:configure_arguments])
+             +
+             +            nginx[:prefix] = prefix
+             +            nginx[:conf_path] = conf_path
+             +          when /^nginx version: nginx\/(\d+\.\d+\.\d+)/
+             +            nginx[:version] = Regexp.last_match(1)
+             +          end
+             +        end
+             +      end
+             +    rescue
+             +      Ohai::Log.debug('Nginx plugin: Could not shell_out "/usr/sbin/nginx -V"')
+             +    end
+             +  end
+             +end
+           * ohai[nginx] action reload
+             - re-run ohai and merge results into node attributes
+           * ohai[nginx] action reload
+             - re-run ohai and merge results into node attributes
+         
+         Converging 16 resources
+         * ohai[reload_nginx] action nothing (skipped due to action :nothing)
+         * ohai_plugin[nginx] action create
+           * directory[/tmp/kitchen/ohai/plugins] action create (skipped due to not_if)
+           * template[/tmp/kitchen/ohai/plugins/nginx.rb] action create (up to date)
+           * ohai[nginx] action nothing (skipped due to action :nothing)
+            (up to date)
+       Recipe: chef_nginx::repo
+         * yum_repository[nginx] action create
+           * template[/etc/yum.repos.d/nginx.repo] action create
+             - create new file /etc/yum.repos.d/nginx.repo
+             - update content in file /etc/yum.repos.d/nginx.repo from none to 59ce60
+             --- /etc/yum.repos.d/nginx.repo	2017-08-21 19:09:13.283173684 +0100
+             +++ /etc/yum.repos.d/.chef-nginx20170821-11934-6hafg.repo	2017-08-21 19:09:13.283173684 +0100
+             @@ -1 +1,11 @@
+             +# This file was generated by Chef
+             +# Do NOT modify this file by hand.
+             +
+             +[nginx]
+             +name=Nginx.org Repository
+             +baseurl=http://nginx.org/packages/centos/7/$basearch/
+             +enabled=1
+             +fastestmirror_enabled=0
+             +gpgcheck=1
+             +gpgkey=http://nginx.org/keys/nginx_signing.key
+             - change mode from '' to '0644'
+           * execute[yum clean metadata nginx] action run
+             - execute yum clean metadata --disablerepo=* --enablerepo=nginx
+           * execute[yum-makecache-nginx] action run
+             - execute yum -q -y makecache --disablerepo=* --enablerepo=nginx
+           * ruby_block[yum-cache-reload-nginx] action create
+             - execute the ruby block yum-cache-reload-nginx
+           * execute[yum clean metadata nginx] action nothing (skipped due to action :nothing)
+           * execute[yum-makecache-nginx] action nothing (skipped due to action :nothing)
+           * ruby_block[yum-cache-reload-nginx] action nothing (skipped due to action :nothing)
+         
+       Recipe: chef_nginx::package
+         * yum_package[nginx] action install
+           - install version 1.12.1-1.el7.ngx of package nginx
+       Recipe: chef_nginx::ohai_plugin
+         * ohai[reload_nginx] action reload
+           - re-run ohai and merge results into node attributes
+       Recipe: chef_nginx::package
+         * service[nginx] action start
+           - start service service[nginx]
+         * service[nginx] action enable
+           - enable service service[nginx]
+       Recipe: chef_nginx::commons_dir
+         * directory[/etc/nginx] action create (up to date)
+         * directory[/var/log/nginx] action create
+           - change mode from '0755' to '0750'
+           - change owner from 'root' to 'nginx'
+         * directory[pid file directory] action create (up to date)
+         * directory[/etc/nginx/sites-available] action create
+           - create new directory /etc/nginx/sites-available
+           - change mode from '' to '0755'
+         * directory[/etc/nginx/sites-enabled] action create
+           - create new directory /etc/nginx/sites-enabled
+           - change mode from '' to '0755'
+         * directory[/etc/nginx/conf.d] action create (up to date)
+       Recipe: chef_nginx::commons_script
+         * template[/usr/sbin/nxensite] action create
+           - create new file /usr/sbin/nxensite
+           - update content in file /usr/sbin/nxensite from none to fa46fb
+           --- /usr/sbin/nxensite	2017-08-21 19:09:21.786913403 +0100
+           +++ /usr/sbin/.chef-nxensite20170821-11934-1g310zg	2017-08-21 19:09:21.786913403 +0100
+           @@ -1 +1,39 @@
+           +#!/bin/sh -e
+           +
+           +SYSCONFDIR='/etc/nginx'
+           +
+           +if [ -z $1 ]; then
+           +        echo "Which site would you like to enable?"
+           +        echo -n "Your choices are: "
+           +        ls $SYSCONFDIR/sites-available/* | \
+           +        sed -e "s,$SYSCONFDIR/sites-available/,,g" | xargs echo
+           +        echo -n "Site name? "
+           +        read SITENAME
+           +else
+           +        SITENAME=$1
+           +fi
+           +
+           +if [ $SITENAME = "default" ]; then
+           +        PRIORITY="000"
+           +fi
+           +
+           +if [ -e $SYSCONFDIR/sites-enabled/$SITENAME -o \
+           +     -e $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME" ]; then
+           +        echo "This site is already enabled!"
+           +        exit 0
+           +fi
+           +
+           +if ! [ -e $SYSCONFDIR/sites-available/$SITENAME ]; then
+           +        echo "This site does not exist!"
+           +        exit 1
+           +fi
+           +
+           +if [ $SITENAME = "default" ]; then
+           +        ln -sf $SYSCONFDIR/sites-available/$SITENAME \
+           +               $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME"
+           +else
+           +        ln -sf $SYSCONFDIR/sites-available/$SITENAME $SYSCONFDIR/sites-enabled/$SITENAME
+           +fi
+           +
+           +echo "Site $SITENAME installed; reload nginx to enable."
+           - change mode from '' to '0755'
+         * template[/usr/sbin/nxdissite] action create
+           - create new file /usr/sbin/nxdissite
+           - update content in file /usr/sbin/nxdissite from none to cc16ec
+           --- /usr/sbin/nxdissite	2017-08-21 19:09:21.813309921 +0100
+           +++ /usr/sbin/.chef-nxdissite20170821-11934-17l4r9x	2017-08-21 19:09:21.813309921 +0100
+           @@ -1 +1,30 @@
+           +#!/bin/sh -e
+           +
+           +SYSCONFDIR='/etc/nginx'
+           +
+           +if [ -z $1 ]; then
+           +        echo "Which site would you like to disable?"
+           +        echo -n "Your choices are: "
+           +        ls $SYSCONFDIR/sites-enabled/* | \
+           +        sed -e "s,$SYSCONFDIR/sites-enabled/,,g" | xargs echo
+           +        echo -n "Site name? "
+           +        read SITENAME
+           +else
+           +        SITENAME=$1
+           +fi
+           +
+           +if [ $SITENAME = "default" ]; then
+           +        PRIORITY="000"
+           +fi
+           +
+           +if ! [ -e $SYSCONFDIR/sites-enabled/$SITENAME -o \
+           +       -e $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME" ]; then
+           +        echo "This site is already disabled, or does not exist!"
+           +        exit 1
+           +fi
+           +
+           +if ! rm $SYSCONFDIR/sites-enabled/$SITENAME 2>/dev/null; then
+           +        rm -f $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME"
+           +fi
+           +echo "Site $SITENAME disabled; reload nginx to disable."
+           - change mode from '' to '0755'
+       Recipe: chef_nginx::commons_conf
+         * template[nginx.conf] action create
+           - update content in file /etc/nginx/nginx.conf from 772e91 to 203722
+           --- /etc/nginx/nginx.conf	2017-07-11 14:47:23.000000000 +0100
+           +++ /etc/nginx/.chef-nginx20170821-11934-ngg94.conf	2017-08-21 19:09:21.822447177 +0100
+           @@ -1,33 +1,48 @@
+           +user nginx;
+           +worker_processes 2;
+            
+           -user  nginx;
+           -worker_processes  1;
+           -
+           -error_log  /var/log/nginx/error.log warn;
+           +error_log  /var/log/nginx/error.log;
+            pid        /var/run/nginx.pid;
+           -
+           -
+            events {
+           -    worker_connections  1024;
+           +  worker_connections  1024;
+            }
+            
+           -
+            http {
+           -    include       /etc/nginx/mime.types;
+           -    default_type  application/octet-stream;
+            
+           -    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+           -                      '$status $body_bytes_sent "$http_referer" '
+           -                      '"$http_user_agent" "$http_x_forwarded_for"';
+           +  include       /etc/nginx/mime.types;
+           +  default_type  application/octet-stream;
+           +  charset_types text/css text/plain text/vnd.wap.wml application/javascript application/json application/rss+xml application/xml;
+            
+           -    access_log  /var/log/nginx/access.log  main;
+            
+           -    sendfile        on;
+           -    #tcp_nopush     on;
+           +  access_log    /var/log/nginx/access.log;
+            
+           -    keepalive_timeout  65;
+           +  sendfile on;
+           +  tcp_nopush on;
+           +  tcp_nodelay on;
+            
+           -    #gzip  on;
+           +  keepalive_requests 100;
+           +  keepalive_timeout  65;
+            
+           -    include /etc/nginx/conf.d/*.conf;
+           +
+           +  gzip  on;
+           +  gzip_http_version 1.0;
+           +  gzip_comp_level 2;
+           +  gzip_proxied any;
+           +  gzip_vary off;
+           +  gzip_types text/plain text/css application/x-javascript text/xml application/xml application/rss+xml application/atom+xml image/svg+xml text/javascript application/javascript application/json text/mathml;
+           +  gzip_min_length  1000;
+           +  gzip_disable     "MSIE [1-6]\.";
+           +
+           +
+           +  variables_hash_max_size 1024;
+           +  variables_hash_bucket_size 64;
+           +  server_names_hash_bucket_size 64;
+           +  types_hash_max_size 2048;
+           +  types_hash_bucket_size 64;
+           +
+           +
+           +
+           +  include /etc/nginx/conf.d/*.conf;
+           +  include /etc/nginx/sites-enabled/*;
+            }
+         * template[/etc/nginx/sites-available/default] action create
+           - create new file /etc/nginx/sites-available/default
+           - update content in file /etc/nginx/sites-available/default from none to dd1df4
+           --- /etc/nginx/sites-available/default	2017-08-21 19:09:21.828538681 +0100
+           +++ /etc/nginx/sites-available/.chef-default20170821-11934-6qo2p7	2017-08-21 19:09:21.828538681 +0100
+           @@ -1 +1,12 @@
+           +server {
+           +  listen   80;
+           +  server_name  default-sbeliakou-centos-73-x86-64-minimal;
+           +
+           +  access_log  /var/log/nginx/localhost.access.log;
+           +
+           +  location / {
+           +    root   /var/www/nginx-default;
+           +    index  index.html index.htm;
+           +  }
+           +}
+         * chef_nginx_site[default] action enable
+           * execute[nxensite default] action run
+             - execute /usr/sbin/nxensite default
+         
+       Recipe: chef_nginx::package
+         * service[nginx] action reload
+           - reload service service[nginx]
+       
+       Running handlers:
+       Running handlers complete
+       Chef Client finished, 24/35 resources updated in 14 seconds
+       Finished converging <default-sbeliakou-centos-73-x86-64-minimal> (0m49.65s).
+-----> Setting up <default-sbeliakou-centos-73-x86-64-minimal>...
+       Finished setting up <default-sbeliakou-centos-73-x86-64-minimal> (0m0.00s).
+-----> Verifying <default-sbeliakou-centos-73-x86-64-minimal>...
+       Loaded tests from test/smoke/default 
+
+Profile: tests from test/smoke/default
+Version: (not specified)
+Target:  ssh://vagrant@127.0.0.1:2203
+
+
+  User root
+[38;5;41m     ✔  should exist[0m
+  System Package
+[38;5;41m     ✔  nginx should be installed[0m
+  Service nginx
+[38;5;41m     ✔  should be enabled[0m
+[38;5;41m     ✔  should be installed[0m
+[38;5;41m     ✔  should be running[0m
+  Bash command
+[38;5;41m     ✔  curl -IL localhost stdout should match /200 OK/i[0m
+  Port 80
+[38;5;247m     ↺  [0m
+
+Test Summary: [38;5;41m6 successful[0m, [38;5;9m0 failures[0m, [38;5;247m1 skipped[0m
+       Finished verifying <default-sbeliakou-centos-73-x86-64-minimal> (0m2.09s).
+-----> Destroying <default-sbeliakou-centos-73-x86-64-minimal>...
+       ==> default: Forcing shutdown of VM...
+       ==> default: Destroying VM and associated drives...
+       Vagrant instance <default-sbeliakou-centos-73-x86-64-minimal> destroyed.
+       Finished destroying <default-sbeliakou-centos-73-x86-64-minimal> (0m4.77s).
+       Finished testing <default-sbeliakou-centos-73-x86-64-minimal> (2m20.21s).
+-----> Kitchen is finished. (2m21.78s)

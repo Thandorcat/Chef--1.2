@@ -1,0 +1,98 @@
+I, [2017-08-21T18:56:29.396018 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: -----> Converging <default-sbeliakou-centos-73-x86-64-minimal>...
+I, [2017-08-21T18:56:29.396504 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Preparing files for transfer
+I, [2017-08-21T18:56:29.396634 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Preparing dna.json
+I, [2017-08-21T18:56:29.396883 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Berksfile, Cheffile, cookbooks/, or metadata.rb not found so Chef will run with effectively no cookbooks. Is this intended?
+I, [2017-08-21T18:56:29.397171 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Removing non-cookbook files before transfer
+I, [2017-08-21T18:56:29.397760 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Preparing validation.pem
+I, [2017-08-21T18:56:29.397978 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Preparing client.rb
+I, [2017-08-21T18:56:29.565762 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: -----> Chef Omnibus installation detected (install only if missing)
+I, [2017-08-21T18:56:29.615813 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Transferring files to <default-sbeliakou-centos-73-x86-64-minimal>
+I, [2017-08-21T18:56:30.977000 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Starting Chef Client, version 13.3.42
+I, [2017-08-21T18:56:32.210325 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: resolving cookbooks for run list: ["chef_nginx::default"]
+I, [2017-08-21T18:56:32.223395 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Synchronizing Cookbooks:
+I, [2017-08-21T18:56:32.228873 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal:   - chef_nginx (0.0.0)
+I, [2017-08-21T18:56:32.237254 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Installing Cookbook Gems:
+I, [2017-08-21T18:56:32.237337 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Compiling Cookbooks...
+I, [2017-08-21T18:56:32.237362 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: 
+I, [2017-08-21T18:56:32.237398 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: ================================================================================
+I, [2017-08-21T18:56:32.237430 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Recipe Compile Error
+I, [2017-08-21T18:56:32.237459 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: ================================================================================
+I, [2017-08-21T18:56:32.237481 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: 
+I, [2017-08-21T18:56:32.237506 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Chef::Exceptions::RecipeNotFound
+I, [2017-08-21T18:56:32.237529 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: --------------------------------
+I, [2017-08-21T18:56:32.237560 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: could not find recipe default for cookbook chef_nginx
+I, [2017-08-21T18:56:32.237583 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: 
+I, [2017-08-21T18:56:32.237606 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: System Info:
+I, [2017-08-21T18:56:32.237633 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: ------------
+I, [2017-08-21T18:56:32.237655 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: chef_version=13.3.42
+I, [2017-08-21T18:56:32.237681 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: platform=centos
+I, [2017-08-21T18:56:32.237708 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: platform_version=7.3.1611
+I, [2017-08-21T18:56:32.237729 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+I, [2017-08-21T18:56:32.237756 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: program_name=chef-client worker: ppid=13158;start=16:56:30;
+I, [2017-08-21T18:56:32.237786 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: executable=/opt/chef/bin/chef-client
+I, [2017-08-21T18:56:32.237818 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: 
+I, [2017-08-21T18:56:32.237850 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: 
+I, [2017-08-21T18:56:32.237873 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Running handlers:
+I, [2017-08-21T18:56:32.237899 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] ERROR: Running exception handlers
+I, [2017-08-21T18:56:32.237924 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] ERROR: Running exception handlers
+I, [2017-08-21T18:56:32.237948 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Running handlers complete
+I, [2017-08-21T18:56:32.237978 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] ERROR: Exception handlers complete
+I, [2017-08-21T18:56:32.238000 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] ERROR: Exception handlers complete
+I, [2017-08-21T18:56:32.238032 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: Chef Client failed. 0 resources updated in 01 seconds
+I, [2017-08-21T18:56:32.238057 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2017-08-21T18:56:32.238079 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2017-08-21T18:56:32.238100 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2017-08-21T18:56:32.238133 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2017-08-21T18:56:32.238158 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] ERROR: could not find recipe default for cookbook chef_nginx
+I, [2017-08-21T18:56:32.238179 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] ERROR: could not find recipe default for cookbook chef_nginx
+I, [2017-08-21T18:56:32.254778 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+I, [2017-08-21T18:56:32.254880 #7401]  INFO -- default-sbeliakou-centos-73-x86-64-minimal: [2017-08-21T16:56:32+01:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2017-08-21T18:56:32.263339 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: Converge failed on instance <default-sbeliakou-centos-73-x86-64-minimal>.
+E, [2017-08-21T18:56:32.263466 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ------Exception-------
+E, [2017-08-21T18:56:32.263491 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: Class: Kitchen::ActionFailed
+E, [2017-08-21T18:56:32.263510 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2017-08-21T18:56:32.263528 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ----------------------
+E, [2017-08-21T18:56:32.263545 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ------Backtrace-------
+E, [2017-08-21T18:56:32.263570 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-08-21T18:56:32.263589 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-08-21T18:56:32.263613 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-08-21T18:56:32.263631 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-08-21T18:56:32.263651 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-08-21T18:56:32.263669 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-08-21T18:56:32.263686 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-08-21T18:56:32.263702 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-08-21T18:56:32.263719 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-08-21T18:56:32.263735 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-08-21T18:56:32.263752 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-08-21T18:56:32.263779 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-08-21T18:56:32.263796 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-08-21T18:56:32.263815 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-08-21T18:56:32.263832 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-08-21T18:56:32.263849 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ----End Backtrace-----
+E, [2017-08-21T18:56:32.263865 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ---Nested Exception---
+E, [2017-08-21T18:56:32.263881 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: Class: Kitchen::Transport::SshFailed
+E, [2017-08-21T18:56:32.263897 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2017-08-21T18:56:32.263914 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ----------------------
+E, [2017-08-21T18:56:32.263941 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ------Backtrace-------
+E, [2017-08-21T18:56:32.263958 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-08-21T18:56:32.263975 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-08-21T18:56:32.263994 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-08-21T18:56:32.264015 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-08-21T18:56:32.264046 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-08-21T18:56:32.264064 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-08-21T18:56:32.264081 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-08-21T18:56:32.264098 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-08-21T18:56:32.264114 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-08-21T18:56:32.264131 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-08-21T18:56:32.264147 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-08-21T18:56:32.264164 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-08-21T18:56:32.264183 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-08-21T18:56:32.264200 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-08-21T18:56:32.264227 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-08-21T18:56:32.264244 #7401] ERROR -- default-sbeliakou-centos-73-x86-64-minimal: ----End Backtrace-----
